@@ -1,0 +1,36 @@
+name: Validate pricing catalog
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+    inputs:
+      stage_azure:
+        description: 'Fetch official Central India Azure VM prices as a review artifact (does not publish)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run prices:check
+      - name: Stage official Azure pricing for review
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.stage_azure }}
+        run: node scripts/sync-prices.mjs --fetch azure --output data/staging/azure.json
+      - uses: actions/upload-artifact@v4
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.stage_azure }}
+        with:
+          name: azure-pricing-review
+          path: data/staging/azure.json
+          retention-days: 14

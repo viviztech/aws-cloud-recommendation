@@ -1,0 +1,2260 @@
+{
+  "schemaVersion": 1,
+  "id": "india-asia-2026-10-15-v2",
+  "publishedAt": "2026-10-15",
+  "fx": {
+    "asOf": "2026-10-15",
+    "source": "https://open.er-api.com/v6/latest/USD",
+    "rates": {
+      "USD": 1,
+      "INR": 95.252751,
+      "EUR": 0.894425
+    }
+  },
+  "providers": [
+    {
+      "id": "aws",
+      "name": "AWS",
+      "color": "#f59e0b",
+      "website": "https://aws.amazon.com/",
+      "calculatorUrl": "https://calculator.aws/",
+      "notes": "General-cloud shortlist uses Linux Lightsail bundles with public IPv4. EC2 and managed-service catalogs are not yet exhaustive."
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "color": "#0ea5e9",
+      "website": "https://azure.microsoft.com/",
+      "calculatorUrl": "https://azure.microsoft.com/en-us/pricing/calculator/",
+      "notes": "Linux pay-as-you-go Central India VMs, Premium SSD LRS disks and Microsoft Premium Global Network internet egress."
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud",
+      "color": "#4285f4",
+      "website": "https://cloud.google.com/",
+      "calculatorUrl": "https://cloud.google.com/products/calculator",
+      "notes": "E2 VMs with balanced Persistent Disk and Standard Network Tier. Standard routing differs from Premium Tier."
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "color": "#0080ff",
+      "website": "https://www.digitalocean.com/",
+      "calculatorUrl": "https://www.digitalocean.com/pricing/calculator",
+      "notes": "Regular Basic bundled Droplets in Bangalore and Singapore. Included transfer accrues while a Droplet exists."
+    },
+    {
+      "id": "hetzner",
+      "name": "Hetzner",
+      "color": "#dc2626",
+      "website": "https://www.hetzner.com/",
+      "calculatorUrl": "https://www.hetzner.com/cloud/",
+      "notes": "Singapore CPX plans use prices effective June 15, 2026, excluding VAT and public IPv4."
+    },
+    {
+      "id": "runpod",
+      "name": "Runpod",
+      "color": "#a855f7",
+      "website": "https://www.runpod.io/",
+      "calculatorUrl": "https://www.runpod.io/pricing",
+      "notes": "Published GPU reference rates. Exact regional host price, network-volume availability and live capacity require confirmation."
+    },
+    {
+      "id": "lambda",
+      "name": "Lambda",
+      "color": "#ec4899",
+      "website": "https://lambda.ai/",
+      "calculatorUrl": "https://lambda.ai/pricing",
+      "notes": "India is a documented region. Public GPU prices are not a guarantee that a particular SKU is offered there."
+    },
+    {
+      "id": "e2e",
+      "name": "E2E Networks",
+      "color": "#14b8a6",
+      "website": "https://www.e2enetworks.com/",
+      "calculatorUrl": "https://calculator.e2enetworks.com/",
+      "notes": "India GPU reference plans in INR. GPU persistent-storage, public-IP and bandwidth charges remain unverified."
+    }
+  ],
+  "offers": [
+    {
+      "id": "aws-lightsail-2gb-ap-south-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 2 GB",
+      "region": {
+        "id": "ap-south-1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.01612,
+        "monthly": 12,
+        "monthlyCap": 12,
+        "includedDiskGb": 60,
+        "includedTransferGb": 1500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.13,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-south-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU EYPUSJKXX85YMZPE, operation Bundle:2GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-4gb-ap-south-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 4 GB",
+      "region": {
+        "id": "ap-south-1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 4,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.03225,
+        "monthly": 24,
+        "monthlyCap": 24,
+        "includedDiskGb": 80,
+        "includedTransferGb": 2000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.13,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-south-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU M5DQWH9VSHR9E2C7, operation Bundle:4GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-8gb-ap-south-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 8 GB",
+      "region": {
+        "id": "ap-south-1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.05913,
+        "monthly": 44,
+        "monthlyCap": 44,
+        "includedDiskGb": 160,
+        "includedTransferGb": 2500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.13,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-south-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU MQZFVMDGSKN7KJ4X, operation Bundle:8GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-16gb-ap-south-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 16 GB",
+      "region": {
+        "id": "ap-south-1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.1129,
+        "monthly": 84,
+        "monthlyCap": 84,
+        "includedDiskGb": 320,
+        "includedTransferGb": 3000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.13,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-south-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU MM5G9A99PM22KNG3, operation Bundle:16GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-2gb-ap-southeast-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 2 GB",
+      "region": {
+        "id": "ap-southeast-1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.01612,
+        "monthly": 12,
+        "monthlyCap": 12,
+        "includedDiskGb": 60,
+        "includedTransferGb": 3000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.12,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-southeast-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU NBSGR8DQN2PW4T36, operation Bundle:2GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-4gb-ap-southeast-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 4 GB",
+      "region": {
+        "id": "ap-southeast-1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 4,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.03225,
+        "monthly": 24,
+        "monthlyCap": 24,
+        "includedDiskGb": 80,
+        "includedTransferGb": 4000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.12,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-southeast-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU EZ9QFPG6SW7ASBPB, operation Bundle:4GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-8gb-ap-southeast-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 8 GB",
+      "region": {
+        "id": "ap-southeast-1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.05913,
+        "monthly": 44,
+        "monthlyCap": 44,
+        "includedDiskGb": 160,
+        "includedTransferGb": 5000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.12,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-southeast-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU MY73GG9BDFTPCK2E, operation Bundle:8GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "aws-lightsail-16gb-ap-southeast-1",
+      "provider": "aws",
+      "kind": "vm",
+      "name": "Lightsail Linux 16 GB",
+      "region": {
+        "id": "ap-southeast-1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.1129,
+        "monthly": 84,
+        "monthlyCap": 84,
+        "includedDiskGb": 320,
+        "includedTransferGb": 6000,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.12,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.05,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://aws.amazon.com/lightsail/pricing/",
+          "ipv4Hour": "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management.html"
+        }
+      },
+      "source": {
+        "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonLightsail/current/ap-southeast-1/index.json",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-09-01",
+        "notes": "SKU GPJC77FKCUFCA44V, operation Bundle:16GB, Linux dual-stack. Monthly cap from published Lightsail pricing. Transfer allowance is also consumed by inbound traffic; this estimate assumes negligible ingress. TB allowances are conservatively represented as 1,000 GB per TB. Stopped instances remain billed until deleted."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "azure-standard_d2as_v5-centralindia",
+      "provider": "azure",
+      "kind": "vm",
+      "name": "D2as_v5 Linux",
+      "region": {
+        "id": "centralindia",
+        "name": "Central India",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.0556,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": 0.12,
+        "freeEgressGb": 100,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskTiers": [
+          {
+            "upToGb": 4,
+            "monthly": 0.84
+          },
+          {
+            "upToGb": 8,
+            "monthly": 1.68
+          },
+          {
+            "upToGb": 16,
+            "monthly": 3.36
+          },
+          {
+            "upToGb": 32,
+            "monthly": 5.2795
+          },
+          {
+            "upToGb": 64,
+            "monthly": 10.207
+          },
+          {
+            "upToGb": 128,
+            "monthly": 19.71
+          },
+          {
+            "upToGb": 256,
+            "monthly": 38.012142
+          },
+          {
+            "upToGb": 512,
+            "monthly": 73.22
+          },
+          {
+            "upToGb": 1024,
+            "monthly": 135.17
+          }
+        ],
+        "diskUnit": "GiB",
+        "sources": {
+          "diskTiers": "https://prices.azure.com/api/retail/prices?$filter=productName%20eq%20%27Premium%20SSD%20Managed%20Disks%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20priceType%20eq%20%27Consumption%27",
+          "ipv4Hour": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Virtual%20Network%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20contains(meterName,%27IP%27)%20and%20priceType%20eq%20%27Consumption%27",
+          "egressGb": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/"
+        },
+        "egressMaxGb": 10000
+      },
+      "source": {
+        "url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'centralindia'%20and%20armSkuName%20eq%20'Standard_D2as_v5'%20and%20priceType%20eq%20'Consumption'",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2021-11-01",
+        "notes": "Consumption Linux meter only; Windows, Cloud Services, Spot and Low Priority meters excluded. Dasv5 specifications from Microsoft Learn. Premium SSD LRS tier rounds capacity up; no paid bursting enabled. Account-wide 100 GB egress allowance assumed unused. First 10 TB paid egress tier modeled."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "azure-standard_d4as_v5-centralindia",
+      "provider": "azure",
+      "kind": "vm",
+      "name": "D4as_v5 Linux",
+      "region": {
+        "id": "centralindia",
+        "name": "Central India",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.111,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": 0.12,
+        "freeEgressGb": 100,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskTiers": [
+          {
+            "upToGb": 4,
+            "monthly": 0.84
+          },
+          {
+            "upToGb": 8,
+            "monthly": 1.68
+          },
+          {
+            "upToGb": 16,
+            "monthly": 3.36
+          },
+          {
+            "upToGb": 32,
+            "monthly": 5.2795
+          },
+          {
+            "upToGb": 64,
+            "monthly": 10.207
+          },
+          {
+            "upToGb": 128,
+            "monthly": 19.71
+          },
+          {
+            "upToGb": 256,
+            "monthly": 38.012142
+          },
+          {
+            "upToGb": 512,
+            "monthly": 73.22
+          },
+          {
+            "upToGb": 1024,
+            "monthly": 135.17
+          }
+        ],
+        "diskUnit": "GiB",
+        "sources": {
+          "diskTiers": "https://prices.azure.com/api/retail/prices?$filter=productName%20eq%20%27Premium%20SSD%20Managed%20Disks%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20priceType%20eq%20%27Consumption%27",
+          "ipv4Hour": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Virtual%20Network%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20contains(meterName,%27IP%27)%20and%20priceType%20eq%20%27Consumption%27",
+          "egressGb": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/"
+        },
+        "egressMaxGb": 10000
+      },
+      "source": {
+        "url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'centralindia'%20and%20armSkuName%20eq%20'Standard_D4as_v5'%20and%20priceType%20eq%20'Consumption'",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2021-11-01",
+        "notes": "Consumption Linux meter only; Windows, Cloud Services, Spot and Low Priority meters excluded. Dasv5 specifications from Microsoft Learn. Premium SSD LRS tier rounds capacity up; no paid bursting enabled. Account-wide 100 GB egress allowance assumed unused. First 10 TB paid egress tier modeled."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "azure-nc24ads-a100-v4-centralindia",
+      "provider": "azure",
+      "kind": "gpu",
+      "name": "NC24ads A100 v4 Linux",
+      "region": {
+        "id": "centralindia",
+        "name": "Central India",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 24,
+      "memoryGb": 220,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA A100 PCIe",
+        "count": 1,
+        "vramGb": 80,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "USD",
+        "hourly": 5.142,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": 0.12,
+        "freeEgressGb": 100,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskTiers": [
+          {
+            "upToGb": 4,
+            "monthly": 0.84
+          },
+          {
+            "upToGb": 8,
+            "monthly": 1.68
+          },
+          {
+            "upToGb": 16,
+            "monthly": 3.36
+          },
+          {
+            "upToGb": 32,
+            "monthly": 5.2795
+          },
+          {
+            "upToGb": 64,
+            "monthly": 10.207
+          },
+          {
+            "upToGb": 128,
+            "monthly": 19.71
+          },
+          {
+            "upToGb": 256,
+            "monthly": 38.012142
+          },
+          {
+            "upToGb": 512,
+            "monthly": 73.22
+          },
+          {
+            "upToGb": 1024,
+            "monthly": 135.17
+          }
+        ],
+        "diskUnit": "GiB",
+        "sources": {
+          "diskTiers": "https://prices.azure.com/api/retail/prices?$filter=productName%20eq%20%27Premium%20SSD%20Managed%20Disks%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20priceType%20eq%20%27Consumption%27",
+          "ipv4Hour": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Virtual%20Network%27%20and%20armRegionName%20eq%20%27centralindia%27%20and%20contains(meterName,%27IP%27)%20and%20priceType%20eq%20%27Consumption%27",
+          "egressGb": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/"
+        },
+        "egressMaxGb": 10000
+      },
+      "source": {
+        "url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'centralindia'%20and%20armSkuName%20eq%20'Standard_NC24ads_A100_v4'%20and%20priceType%20eq%20'Consumption'",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2023-05-01",
+        "notes": "SKU Standard_NC24ads_A100_v4; product NCads A100 v4 Series Linux; meter NC24ads_A100_v4. Hardware: Microsoft Learn nca100v4-series. Included local temporary/NVMe disk is not counted as persistent storage. GPU quota and deployment capacity are unverified. Paid disk-bursting and data-IOPS surcharges are not enabled."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-2-asia-south1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-2 · Standard Network",
+      "region": {
+        "id": "asia-south1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.08048436,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.12,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-4-asia-south1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-4 · Standard Network",
+      "region": {
+        "id": "asia-south1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.16096872,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.12,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-8-asia-south1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-8 · Standard Network",
+      "region": {
+        "id": "asia-south1",
+        "name": "Mumbai",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 8,
+      "memoryGb": 32,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.32193744,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.12,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-2-asia-southeast1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-2 · Standard Network",
+      "region": {
+        "id": "asia-southeast1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.08266614,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.11,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-4-asia-southeast1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-4 · Standard Network",
+      "region": {
+        "id": "asia-southeast1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.16533228,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.11,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "gcp-e2-standard-8-asia-southeast1",
+      "provider": "gcp",
+      "kind": "vm",
+      "name": "E2 standard-8 · Standard Network",
+      "region": {
+        "id": "asia-southeast1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 8,
+      "memoryGb": 32,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.33066456,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": 0.11,
+        "egressGb": 0.11,
+        "freeEgressGb": 200,
+        "ipv4Hour": 0.005,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://cloud.google.com/compute/disks-image-pricing",
+          "egressGb": "https://cloud.google.com/vpc/network-pricing",
+          "ipv4Hour": "https://cloud.google.com/vpc/network-pricing"
+        },
+        "egressMaxGb": 10040
+      },
+      "source": {
+        "url": "https://cloud.google.com/products/compute/pricing/general-purpose",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Regional E2 standard on-demand price from the official page's embedded region table. Balanced zonal Persistent Disk. Explicitly select Standard Network Tier; 200 GiB free per billing account across regions assumed unused, then first paid tier is $0.11/GiB in both listed regions. Higher volume discounts not modeled. OS licensing, snapshots and managed services excluded."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-1vcpu-2gb-blr1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 1 vCPU / 2 GiB",
+      "region": {
+        "id": "blr1",
+        "name": "Bangalore",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 1,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.01786,
+        "monthly": 12,
+        "monthlyCap": 12,
+        "includedDiskGb": 50,
+        "includedTransferGb": 2000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-2vcpu-2gb-blr1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 2 vCPU / 2 GiB",
+      "region": {
+        "id": "blr1",
+        "name": "Bangalore",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.02679,
+        "monthly": 18,
+        "monthlyCap": 18,
+        "includedDiskGb": 60,
+        "includedTransferGb": 3000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-2vcpu-4gb-blr1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 2 vCPU / 4 GiB",
+      "region": {
+        "id": "blr1",
+        "name": "Bangalore",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 4,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.03571,
+        "monthly": 24,
+        "monthlyCap": 24,
+        "includedDiskGb": 80,
+        "includedTransferGb": 4000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-4vcpu-8gb-blr1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 4 vCPU / 8 GiB",
+      "region": {
+        "id": "blr1",
+        "name": "Bangalore",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.07143,
+        "monthly": 48,
+        "monthlyCap": 48,
+        "includedDiskGb": 160,
+        "includedTransferGb": 5000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-8vcpu-16gb-blr1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 8 vCPU / 16 GiB",
+      "region": {
+        "id": "blr1",
+        "name": "Bangalore",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 8,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.14286,
+        "monthly": 96,
+        "monthlyCap": 96,
+        "includedDiskGb": 320,
+        "includedTransferGb": 6000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-1vcpu-2gb-sgp1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 1 vCPU / 2 GiB",
+      "region": {
+        "id": "sgp1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 1,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.01786,
+        "monthly": 12,
+        "monthlyCap": 12,
+        "includedDiskGb": 50,
+        "includedTransferGb": 2000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-2vcpu-2gb-sgp1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 2 vCPU / 2 GiB",
+      "region": {
+        "id": "sgp1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.02679,
+        "monthly": 18,
+        "monthlyCap": 18,
+        "includedDiskGb": 60,
+        "includedTransferGb": 3000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-2vcpu-4gb-sgp1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 2 vCPU / 4 GiB",
+      "region": {
+        "id": "sgp1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 4,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.03571,
+        "monthly": 24,
+        "monthlyCap": 24,
+        "includedDiskGb": 80,
+        "includedTransferGb": 4000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-4vcpu-8gb-sgp1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 4 vCPU / 8 GiB",
+      "region": {
+        "id": "sgp1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.07143,
+        "monthly": 48,
+        "monthlyCap": 48,
+        "includedDiskGb": 160,
+        "includedTransferGb": 5000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "do-s-8vcpu-16gb-sgp1",
+      "provider": "digitalocean",
+      "kind": "vm",
+      "name": "Basic Regular · 8 vCPU / 16 GiB",
+      "region": {
+        "id": "sgp1",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 8,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.14286,
+        "monthly": 96,
+        "monthlyCap": 96,
+        "includedDiskGb": 320,
+        "includedTransferGb": 6000,
+        "billingIncrementSeconds": 1,
+        "minimumBillingSeconds": 60,
+        "minimumCharge": 0.01,
+        "transferAccrualHours": 672,
+        "transferUnit": "GiB",
+        "diskUnit": "GiB"
+      },
+      "rates": {
+        "diskGbMonth": 0.1,
+        "egressGb": 0.01,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": 0.06,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "diskUnit": "GiB",
+        "egressUnit": "GiB",
+        "sources": {
+          "diskGbMonth": "https://www.digitalocean.com/pricing/volumes",
+          "egressGb": "https://docs.digitalocean.com/platform/billing/bandwidth/"
+        }
+      },
+      "source": {
+        "url": "https://www.digitalocean.com/pricing/droplets",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-01-01",
+        "notes": "Regular Basic bundled plan, shared CPU. Global pricing page confirms Bangalore and Singapore locations; live plan capacity is not checked. Bundled public IPv4 is included. Transfer accrues per second over a 672-hour billing cycle. Snapshot storage is a separately requested backup estimate."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "hetzner-cpx12-sin",
+      "provider": "hetzner",
+      "kind": "vm",
+      "name": "CPX12",
+      "region": {
+        "id": "sin",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 1,
+      "memoryGb": 2,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.0288,
+        "monthly": 17.99,
+        "monthlyCap": 17.99,
+        "includedDiskGb": 40,
+        "includedTransferGb": 500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0.001,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "ipv4MonthlyCap": 0.6,
+        "sources": {
+          "ipv4Hour": "https://docs.hetzner.com/cloud/servers/primary-ips/overview/",
+          "includedTransferGb": "https://www.hetzner.com/cloud/regular-performance/"
+        }
+      },
+      "source": {
+        "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-06-15",
+        "notes": "Current Singapore USD prices excluding VAT and IPv4. AMD shared CPU/NVMe specifications from official Regular Performance page. Conservatively uses the published AP minimum allowance of 0.5 TB as 500 GB; individual plan allowances can be higher. Additional transfer and attached-volume rates not modeled, so crossing included storage/traffic marks a quote incomplete. Hourly billing rounds up; server remains billed while stopped."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "hetzner-cpx22-sin",
+      "provider": "hetzner",
+      "kind": "vm",
+      "name": "CPX22",
+      "region": {
+        "id": "sin",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 2,
+      "memoryGb": 4,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.0497,
+        "monthly": 30.99,
+        "monthlyCap": 30.99,
+        "includedDiskGb": 80,
+        "includedTransferGb": 500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0.001,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "ipv4MonthlyCap": 0.6,
+        "sources": {
+          "ipv4Hour": "https://docs.hetzner.com/cloud/servers/primary-ips/overview/",
+          "includedTransferGb": "https://www.hetzner.com/cloud/regular-performance/"
+        }
+      },
+      "source": {
+        "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-06-15",
+        "notes": "Current Singapore USD prices excluding VAT and IPv4. AMD shared CPU/NVMe specifications from official Regular Performance page. Conservatively uses the published AP minimum allowance of 0.5 TB as 500 GB; individual plan allowances can be higher. Additional transfer and attached-volume rates not modeled, so crossing included storage/traffic marks a quote incomplete. Hourly billing rounds up; server remains billed while stopped."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "hetzner-cpx32-sin",
+      "provider": "hetzner",
+      "kind": "vm",
+      "name": "CPX32",
+      "region": {
+        "id": "sin",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 4,
+      "memoryGb": 8,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.0929,
+        "monthly": 57.99,
+        "monthlyCap": 57.99,
+        "includedDiskGb": 160,
+        "includedTransferGb": 500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0.001,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "ipv4MonthlyCap": 0.6,
+        "sources": {
+          "ipv4Hour": "https://docs.hetzner.com/cloud/servers/primary-ips/overview/",
+          "includedTransferGb": "https://www.hetzner.com/cloud/regular-performance/"
+        }
+      },
+      "source": {
+        "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-06-15",
+        "notes": "Current Singapore USD prices excluding VAT and IPv4. AMD shared CPU/NVMe specifications from official Regular Performance page. Conservatively uses the published AP minimum allowance of 0.5 TB as 500 GB; individual plan allowances can be higher. Additional transfer and attached-volume rates not modeled, so crossing included storage/traffic marks a quote incomplete. Hourly billing rounds up; server remains billed while stopped."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "hetzner-cpx42-sin",
+      "provider": "hetzner",
+      "kind": "vm",
+      "name": "CPX42",
+      "region": {
+        "id": "sin",
+        "name": "Singapore",
+        "country": "SG",
+        "zoneCount": 1
+      },
+      "vcpu": 8,
+      "memoryGb": 16,
+      "architecture": "x86",
+      "cpuClass": "shared",
+      "gpu": null,
+      "price": {
+        "currency": "USD",
+        "hourly": 0.1763,
+        "monthly": 109.99,
+        "monthlyCap": 109.99,
+        "includedDiskGb": 320,
+        "includedTransferGb": 500,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": 0.001,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "ipv4MonthlyCap": 0.6,
+        "sources": {
+          "ipv4Hour": "https://docs.hetzner.com/cloud/servers/primary-ips/overview/",
+          "includedTransferGb": "https://www.hetzner.com/cloud/regular-performance/"
+        }
+      },
+      "source": {
+        "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-06-15",
+        "notes": "Current Singapore USD prices excluding VAT and IPv4. AMD shared CPU/NVMe specifications from official Regular Performance page. Conservatively uses the published AP minimum allowance of 0.5 TB as 500 GB; individual plan allowances can be higher. Additional transfer and attached-volume rates not modeled, so crossing included storage/traffic marks a quote incomplete. Hourly billing rounds up; server remains billed while stopped."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "runpod-h100-sxm-ap-in-1",
+      "provider": "runpod",
+      "kind": "gpu",
+      "name": "H100 SXM · published reference",
+      "region": {
+        "id": "AP-IN-1",
+        "name": "India · AP-IN-1",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 20,
+      "memoryGb": 125,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA H100 SXM",
+        "count": 1,
+        "vramGb": 80,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "USD",
+        "hourly": 3.99,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 1
+      },
+      "rates": {
+        "diskGbMonth": 0.07,
+        "egressGb": 0,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null,
+        "sources": {
+          "diskGbMonth": "https://www.runpod.io/product/cloud-gpus",
+          "egressGb": "https://www.runpod.io/product/cloud-gpus"
+        },
+        "diskMaxGb": 1000
+      },
+      "source": {
+        "url": "https://www.runpod.io/pricing",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": "2026-10-08",
+        "notes": "Public H100 SXM 80 GB reference rate and hardware specification. AP-IN-1 launch announcement confirms H100 80 GB HBM3 hardware in India, but exact host price, CPU/RAM allocation and network-volume availability there are not independently quoted. Standard network storage under 1 TB is $0.07/GB/month; not a guarantee that it is attachable in AP-IN-1. No ingress/egress fees. Public IPv4 pricing not verified."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true,
+      "regionalPricingVerified": false
+    },
+    {
+      "id": "lambda-h100-pcie-india-reference",
+      "provider": "lambda",
+      "kind": "gpu",
+      "name": "NVIDIA H100 PCIe · published reference",
+      "region": {
+        "id": "asia-south-1",
+        "name": "India · SKU confirmation needed",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 26,
+      "memoryGb": 225,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA H100 PCIe",
+        "count": 1,
+        "vramGb": 80,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "USD",
+        "hourly": 3.29,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null
+      },
+      "source": {
+        "url": "https://lambda.ai/pricing",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Single-GPU public rate and specification. India region exists but documentation explicitly says not every instance type is available in every region. Regional SKU association, persistent-filesystem price and public-IP/egress meters require a live authenticated quote. Published root SSD is not counted as persistent storage after instance termination."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true,
+      "regionalPricingVerified": false
+    },
+    {
+      "id": "lambda-a6000-india-reference",
+      "provider": "lambda",
+      "kind": "gpu",
+      "name": "NVIDIA RTX A6000 · published reference",
+      "region": {
+        "id": "asia-south-1",
+        "name": "India · SKU confirmation needed",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 14,
+      "memoryGb": 100,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA RTX A6000",
+        "count": 1,
+        "vramGb": 48,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "USD",
+        "hourly": 1.09,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 3600
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null
+      },
+      "source": {
+        "url": "https://lambda.ai/pricing",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Single-GPU public rate and specification. India region exists but documentation explicitly says not every instance type is available in every region. Regional SKU association, persistent-filesystem price and public-IP/egress meters require a live authenticated quote. Published root SSD is not counted as persistent storage after instance termination."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true,
+      "regionalPricingVerified": false
+    },
+    {
+      "id": "e2e-l4-india",
+      "provider": "e2e",
+      "kind": "gpu",
+      "name": "NVIDIA L4 · India",
+      "region": {
+        "id": "india",
+        "name": "India · Delhi NCR",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 25,
+      "memoryGb": 110,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA L4",
+        "count": 1,
+        "vramGb": 24,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "INR",
+        "hourly": 49,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null
+      },
+      "source": {
+        "url": "https://www.e2enetworks.com/gpu-cloud",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Published INR on-demand single-GPU plan in India; source identifies Delhi NCR datacenters. Monthly committed plans are not treated as on-demand caps. Pricing pages in USD and INR differ; this offer deliberately uses the INR India product page without converting a USD tariff. Root disk size/persistence, attached-volume applicability, public IP and outbound transfer require confirmation."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "e2e-h100-india",
+      "provider": "e2e",
+      "kind": "gpu",
+      "name": "NVIDIA H100 · India",
+      "region": {
+        "id": "india",
+        "name": "India · Delhi NCR",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 26,
+      "memoryGb": 250,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA H100",
+        "count": 1,
+        "vramGb": 80,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "INR",
+        "hourly": 362,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null
+      },
+      "source": {
+        "url": "https://www.e2enetworks.com/gpu-cloud",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Published INR on-demand single-GPU plan in India; source identifies Delhi NCR datacenters. Monthly committed plans are not treated as on-demand caps. Pricing pages in USD and INR differ; this offer deliberately uses the INR India product page without converting a USD tariff. Root disk size/persistence, attached-volume applicability, public IP and outbound transfer require confirmation."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    },
+    {
+      "id": "e2e-a100-80-india",
+      "provider": "e2e",
+      "kind": "gpu",
+      "name": "NVIDIA A100 · India",
+      "region": {
+        "id": "india",
+        "name": "India · Delhi NCR",
+        "country": "IN",
+        "zoneCount": 1
+      },
+      "vcpu": 16,
+      "memoryGb": 115,
+      "architecture": "x86",
+      "cpuClass": "dedicated",
+      "gpu": {
+        "model": "NVIDIA A100",
+        "count": 1,
+        "vramGb": 80,
+        "interconnect": false
+      },
+      "price": {
+        "currency": "INR",
+        "hourly": 189,
+        "monthly": null,
+        "monthlyCap": null,
+        "includedDiskGb": 0,
+        "includedTransferGb": 0,
+        "billingIncrementSeconds": 60
+      },
+      "rates": {
+        "diskGbMonth": null,
+        "egressGb": null,
+        "freeEgressGb": 0,
+        "ipv4Hour": null,
+        "objectGbMonth": null,
+        "objectRequestsMillion": null,
+        "backupGbMonth": null,
+        "loadBalancerHour": null,
+        "managedDbMonth": null
+      },
+      "source": {
+        "url": "https://www.e2enetworks.com/gpu-cloud",
+        "checkedAt": "2026-10-15",
+        "effectiveAt": null,
+        "notes": "Published INR on-demand single-GPU plan in India; source identifies Delhi NCR datacenters. Monthly committed plans are not treated as on-demand caps. Pricing pages in USD and INR differ; this offer deliberately uses the INR India product page without converting a USD tariff. Root disk size/persistence, attached-volume applicability, public IP and outbound transfer require confirmation."
+      },
+      "capacity": "unknown",
+      "purchase": "on-demand",
+      "verified": true
+    }
+  ],
+  "coverage": [
+    {
+      "provider": "aws",
+      "kind": "gpu",
+      "reason": "Regional EC2 GPU SKUs and their complete component rates are not yet imported. General compute coverage currently uses Lightsail."
+    },
+    {
+      "provider": "aws",
+      "kind": "static",
+      "reason": "S3/CloudFront request tiers and transfer charges are not yet normalized."
+    },
+    {
+      "provider": "azure",
+      "kind": "static",
+      "reason": "Static Web Apps, Blob Storage and CDN pricing are not yet normalized."
+    },
+    {
+      "provider": "azure",
+      "kind": "vm",
+      "reason": "Central India Linux Dasv5 shortlist only; managed database, load balancer, object storage and backup prices are not yet modeled."
+    },
+    {
+      "provider": "gcp",
+      "kind": "gpu",
+      "reason": "Regional GPU configurations and quota/capacity have not yet been verified."
+    },
+    {
+      "provider": "gcp",
+      "kind": "static",
+      "reason": "Cloud Storage/CDN request and transfer pricing are not yet normalized."
+    },
+    {
+      "provider": "digitalocean",
+      "kind": "gpu",
+      "reason": "GPU Droplet India/nearby-Asia SKU and availability association has not yet been verified."
+    },
+    {
+      "provider": "digitalocean",
+      "kind": "static",
+      "reason": "App Platform/Spaces fixed bundles are not represented as arbitrary per-GB storage prices."
+    },
+    {
+      "provider": "hetzner",
+      "kind": "gpu",
+      "reason": "No India or nearby-Asia GPU offer has been verified."
+    },
+    {
+      "provider": "hetzner",
+      "kind": "static",
+      "reason": "Object-storage fixed base fee and regional eligibility are not yet modeled."
+    },
+    {
+      "provider": "runpod",
+      "kind": "gpu",
+      "reason": "India H100 hardware is documented; public reference rate and network-storage availability still need exact regional confirmation. Capacity is unknown."
+    },
+    {
+      "provider": "runpod",
+      "kind": "vm",
+      "reason": "General-purpose CPU offers are outside this verified shortlist."
+    },
+    {
+      "provider": "lambda",
+      "kind": "gpu",
+      "reason": "India region and public instance prices are documented separately; a live regional SKU quote is required."
+    },
+    {
+      "provider": "lambda",
+      "kind": "vm",
+      "reason": "Standalone general-purpose CPU offers are outside this verified shortlist."
+    },
+    {
+      "provider": "e2e",
+      "kind": "gpu",
+      "reason": "Compute-only India GPU rates are published. Persistent-storage, public IPv4 and network component rates are unverified."
+    },
+    {
+      "provider": "e2e",
+      "kind": "vm",
+      "reason": "CPU plans exist; exact regional plan, egress, public-IP and billing-cap association is not yet verified."
+    }
+  ]
+}
