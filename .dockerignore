@@ -1,0 +1,8 @@
+.git
+.env*
+*.pem
+node_modules
+output
+outputs
+.playwright-cli
+README.md
